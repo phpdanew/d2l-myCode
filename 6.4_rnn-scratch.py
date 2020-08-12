@@ -11,8 +11,7 @@ import d2lzh_pytorch as d2l
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 (corpus_indices, char_to_idx, idx_to_char, vocab_size) = d2l.load_data_jay_lyrics()
-print(corpus_indices)
-exit(0)
+
 
 def one_hot(x, n_class, dtype=torch.float32):
     # X shape: (batch), output shape: (batch, n_class)
